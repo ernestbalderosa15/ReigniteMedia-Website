@@ -2,14 +2,14 @@
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  { href: '/about', label: 'About us' },
+  //{ href: '/about', label: 'About us' },
   { href: '/#services', label: 'Services' },
-  { href: '/#cases', label: 'Use Cases' },
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/articles', label: 'Blog'},
+  { href: '/#projects', label: 'Recent Projects' },
+  //{ href: '/pricing', label: 'Pricing' },
+  //{ href: '/articles', label: 'Blog'},
 ];
 
-const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
+const navButton = { href: 'https://calendly.com/ernest-reignitemedia/30min', label: 'Book a Consultation'};
 ---
 
 <div class="mt-20">
@@ -51,7 +51,7 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
               <a 
                 class="mobile-nav-link px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" 
                 href={navButton.href}
-                data-close-menu="true"
+                data-close-menu="true", target="_blank"
               >
                 <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
               </a>
@@ -62,7 +62,7 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
 
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href}>
+          <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href}, target="_blank">
             <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
           </a>
         </div>
