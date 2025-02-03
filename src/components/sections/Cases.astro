@@ -7,21 +7,21 @@ const cards = [
   {
     index: 0,
     title:
-      "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
-    link: "https://google.com",
+      "For Desmirage, an upcoming US-based perfume brand, we designed a sleek and immersive e-commerce website that captures the essence of luxury and sophistication. Our strategy included a high-converting landing page, an engaging product showcase, and a seamless shopping experience. Additionally, we implemented an SEO-driven content strategy that increased organic traffic by 180% in three months.",
+    link: "https://www.figma.com/proto/3SbalMoniZDvEMALsAshM6/Desmirage-(Copy)-(Copy)?page-id=0%3A1&node-id=7-352&p=f&viewport=663%2C632%2C0.78&t=v3yyQFeFRxB8MJYw-1&scaling=min-zoom&content-scaling=fixed",
   },
   {
     index: 1,
     title:
-      "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
-    link: "https://google.com",
+      "For Jojorganic, a premium skincare and haircare brand, we crafted a visually appealing and user-friendly online store that emphasizes their commitment to organic beauty. We also developed a targeted social media marketing campaign, resulting in a 40% increase in engagement and a 30% boost in online sales. Our email marketing strategy further enhanced customer retention, leading to a higher repeat purchase rate.",
+    link: "https://www.figma.com/proto/7kMc9B4fDMkNBm3wJV0tWy/Jojorganic-(Copy)-(Copy)?page-id=77%3A2&node-id=77-3&viewport=-1476%2C-401%2C0.65&t=14YqxdkdRmANRn8i-1&scaling=min-zoom&content-scaling=fixed",
   },
   {
     index: 1,
     title:
-      "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
-    link: "https://google.com",
-  },
+      "For Kohinoor, a renowned Indian gold jewelry company in the US, we revamped their digital presence with a modern, mobile-first website showcasing their exquisite collections. Our SEO and PPC strategy led to a 50% increase in website traffic, while our conversion-optimized product pages boosted sales by 25%. We also launched a storytelling-based branding campaign that strengthened Kohinoor’s image as a trusted heritage brand.",
+    link: "https://www.figma.com/proto/GJK1xMAQNdoeLdInPaG4Wm/Kohinoor?page-id=0%3A1&node-id=0-22&viewport=3331%2C2693%2C0.57&t=WQLI0WvPt0Lculap-1&scaling=min-zoom&content-scaling=fixed",
+  }
 ];
 
 import larrow from "../../assets/icon3.svg";
@@ -40,8 +40,8 @@ import SectionTitle from "../ui/SectionTitle.astro";
           <div class="flex p-[60px] h-full bg-dark text-gray rounded-[45px] m-[1px]">
             <div class="flex flex-col gap-5">
               <p>{card.title}</p>
-              <a href={card.link} class="flex items-center gap-[15px]">
-                <span class="text-orange">Case Info</span>
+              <a href={card.link} class="flex items-center gap-[15px]" target="_blank">
+                <span class="text-orange">Website Demo</span>
                 <picture>
                   <Image src={larrow} alt="Arrow pointing up right" />
                 </picture>

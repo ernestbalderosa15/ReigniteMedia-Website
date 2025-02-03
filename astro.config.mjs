@@ -7,6 +7,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://ReigniteMediatheme.vercel.app",
   integrations: [tailwind()],
   output: 'server',
   adapter: vercel(),
