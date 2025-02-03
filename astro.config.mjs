@@ -2,13 +2,11 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
 
-// Import the Vercel adapter
-import vercel from '@astrojs/vercel';
+import netlify from '@astrojs/netlify';
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://ReigniteMediatheme.vercel.app",
+  output: 'server', // Optional, but useful for dynamic SSR
+  adapter: netlify(),
   integrations: [tailwind()],
-  output: 'server',
-  adapter: vercel(),
 });
+
